@@ -1,0 +1,28 @@
+.image{position:relative;}
+
+.zone-infos{
+  display:none;
+  position:absolute;
+  border-radius: 6px;
+  text-align : center;
+  padding : 8px 0;
+  cursor : default;
+}
+
+.zsun{
+  top:270px;
+  left:60px;
+  background-color: rgba(255, 204, 0, 0.5);
+}
+
+.zmercury{
+  top:270px;
+  left:210px;
+  background-color: rgba(102, 51, 0, 0.5);
+}
+
+.zvenus{
+  top:270px;
+  left: 350px;
+  background-color: rgba(102, 204, 255, 0.5);
+}

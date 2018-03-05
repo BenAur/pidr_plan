@@ -1,0 +1,43 @@
+.floorplan,
+.room {
+    border: 1px solid #ee7538;
+}
+
+.floorplan {
+    background: #ebecec;
+    height: 300px;
+    position: relative;
+    width: 200px;
+}
+
+.room {
+    background: #fff;
+    color: #000;
+    display: block;
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+}
+
+.room:hover {
+    background: #ee7538;
+    color: #fff;
+}
+
+#room1018 {
+    height: 50px;
+    left: 20px;
+    line-height: 50px;
+    top: 20px;
+    width: 50px;
+}
+
+#room1025 {
+    height: 100px;
+    left: 20px;
+    line-height: 100px;
+    top: 100px;
+    width: 50px;
+}

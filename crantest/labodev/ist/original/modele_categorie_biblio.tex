@@ -1,0 +1,197 @@
+%-------------------------------------------------------------------------
+%----- Fichier : PG changement du nom de fichier (categorie.tex) pour avoir des noms de fichiers categorie0.aux,.... (Trouver comment faire
+%-----              dans la doc bibtopic 
+%----- Date    : 29 mai 2007
+%----- Révisé : 05 juillet 2007
+%----- Auteurs : A. Richard
+%----- Objet   : Edition du fichier .bib des publications CRAN
+%-------------------------------------------------------------------------
+
+
+\documentclass[10pt,a4paper,twoside]{book}
+
+\usepackage[T1]{fontenc}            % Utilisation des fontes 8 bits DC
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{xspace}
+%\usepackage{bbold} % PG bbold non installe en standard 
+\usepackage{epic,eepic}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bbm}                    
+\usepackage{fancyhdr}
+\usepackage{makeidx} % extension permettant de générer un index (Rolland p.178)
+\usepackage{colortbl}
+% rajout pour french DM
+%\usepackage{french}
+%\usepackage{frbib} 
+\usepackage{frenchle} % à placer en fin de liste usepackage (doc frenchpro) % PG frenchle a la place de french AR
+\usepackage{pdfsync} % liaison entre fichier source et pdf (cf aide TeXShop)
+\usepackage{bibtopic}
+\language=1                         % Active la césure française
+
+\setlength{\textwidth}{15.8cm}      %{16cm}
+\setlength{\textheight}{24.5cm}
+\setlength{\oddsidemargin}{0.1cm}   %{0.1cm}
+\setlength{\evensidemargin}{0.1cm}  %{0.1cm}
+\setlength{\headheight}{1.5cm}      %{1.5cm}
+\setlength{\topmargin}{-2cm}
+
+
+%\input{alphanew.tex}
+%\input{revuedef.tex}
+%\input{month-fr.tex}
+%-------------------------------------------------------------------------
+%---- headers ------------------------------------------------------------
+%-------------------------------------------------------------------------
+\pagestyle{fancy}
+
+\fancyhead{} \fancyfoot{}
+%
+% R : right     L: left  C: center   E: even    O : odd
+%
+%\fancyhead[RE,LO]{ \footnotesize {CRAN}}
+
+%\fancyhead[CO]{\footnotesize{ \slshape \nouppercase{\leftmark}}}
+
+%\fancyhead[CE]{ \footnotesize {\em{Rapport 2004-2007}}}
+
+%\fancyhead[LE,RO]{ \footnotesize{\thepage}}
+
+\renewcommand{\headrulewidth}{0.0pt}
+
+%-------------------------------------------------------------------------
+%----- équivalent bookch.cls ---------------------------------------------
+%-------------------------------------------------------------------------
+% Pas de numéros de chapitre dans numérotation des sections et sous-sections
+
+\makeatletter
+
+%\renewcommand\thesection      {\thechapter.\@arabic\c@section}
+\renewcommand\thesection      {\@arabic\c@section.}
+%\renewcommand\thesubsection   {\thesection.\@arabic\c@subsection}
+\renewcommand\thesubsection   {\thesection\@arabic\c@subsection}
+\renewcommand\thesubsubsection{\thesubsection .\@arabic\c@subsubsection}
+\renewcommand\theparagraph    {\thesubsubsection.\@arabic\c@paragraph}
+\renewcommand\thesubparagraph {\theparagraph.\@arabic\c@subparagraph}
+\renewcommand{\seename}{voir} % référence à un autre mot pour l'index, cf Rolland p. 181
+
+
+\makeatother
+\makeindex
+
+%-------------------------------------------------------------------------
+%----------------    Page de garde   ---------------------------- ----
+%-------------------------------------------------------------------------
+\title{
+ \vspace{-3cm}
+    {\huge Centre de Recherche en Automatique de Nancy}\\
+    \vspace{6cm}
+    {\Huge \textbf{Publications octobre 2003-2007}}\\
+    \vspace{10cm}
+    \hspace{5cm}   
+    }
+\author{}
+\date{}
+%-------------------------------------------------------------------------
+%-------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------
+%-------------------------------------------------------------------------
+%-------------------------------------------------------------------------
+\begin{document}
+\def\figurename{{\sc Figure~}}
+\def\euro{\mbox{\raisebox{.25ex}{{\it =}}\hspace{-.5em}{\sf C}}} % symbole euro avec la commande {\euro}
+
+%\nocite{*}
+
+
+
+\thispagestyle{empty}
+% Modif. pour ref sous la forme [BBA04] DM
+%style et contenu des réfs.
+%##PG :debut insertion du contenu de la partie bibtopic##
+\begin{btUnit}
+\begin{btSect}{categorie0}
+\section*{Pas de catégorie}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie1}
+\section*{Articles dans des revues avec comité de lecture}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie2}
+\section*{Articles dans des revues sans comité de lecture}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie3}
+\section*{Communications avec actes}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie4}
+\section*{Communications sans actes}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie5}
+\section*{Directions d'ouvrages}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie6}
+\section*{Chapitres d'ouvrages scientifiques}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie7}
+\section*{Ouvrages scientifiques}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie8}
+\section*{Ouvrage éditeur (HAL Direction d'ouvrages)}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie9}
+\section*{Autres publications}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie10}
+\section*{Rapport de stage (HAL : pas d'équivalent)}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie11}
+\section*{Rapport interne (HAL : pas d'équivalent)}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie12}
+\section*{Thèses}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie13}
+\section*{HDR}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie14}
+\section*{Manuel technique (HAL : pas d'équivalent)}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie15}
+\section*{Support de cours (HAL : pas d'équivalent)}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie16}
+\section*{Brevets}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie17}
+\section*{Document audiovisuel (HAL : pas d'équivalent)}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie18}
+\section*{Documents sans référence de publication}
+\btPrintAll
+\end{btSect}
+\begin{btSect}{categorie19}
+\section*{Conférences invitées}
+\btPrintAll
+\end{btSect}
+\end{btUnit}
+%##PG :fin insertion du contenu de la partie bibtopic##
+\end{document}
