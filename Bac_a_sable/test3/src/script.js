@@ -14,7 +14,7 @@ function get_left(room){
 
 function get_top(room){
   tableau=($("."+room).attr("coords")).split(",");
-  return ((parseInt(tableau[1])+parseInt(tableau[3]))/2 - parseInt($(".zone-infos").css("height"))/2)
+  return ((parseInt(tableau[1])+parseInt(tableau[3]))/2 - parseInt($(".zone-infos").css("height"))/2);
 }
 
 function get_room_number(a){
@@ -25,5 +25,29 @@ function get_room_number(a){
 
 $(document).ready(function(){
   $(".room").on("click", function(e){tib_help(e,get_room_number(this))});
+  $(".b4").on("click",function(e){
+    if ($(".plan4").css("display")=="none"){
+      $(".plan5").css("display","none");
+      $(".plan6").css("display","none");
+      $(".plan4").css("display","inline");
+      $(".zone-infos").slideUp(100);
+    }
+  })
+  $(".b5").on("click",function(e){
+    if ($(".plan5").css("display")=="none"){
+      $(".plan4").css("display","none");
+      $(".plan6").css("display","none");
+      $(".plan5").css("display","inline");
+      $(".zone-infos").slideUp(100);
+    }
+  })
+  $(".b6").on("click",function(e){
+    if ($(".plan4").css("display")=="none"){
+      $(".plan5").css("display","none");
+      $(".plan4").css("display","none");
+      $(".plan6").css("display","inline");
+      $(".zone-infos").slideUp(100);
+    }
+  })
   //$(".zone-infos").on("click", function(e){$(".zone-infos").hide()});
 });

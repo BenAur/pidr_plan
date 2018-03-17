@@ -4,15 +4,23 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link type="text/css" rel="stylesheet" href="./style.css"/>
   </head>
 
   <body>
 
     <p>Prototype</p>
 
+    <div class="buttons">
+      <button class="b4">Room4</button>
+      <button class="b5">Room5</button>
+      <button class="b6">Room6</button>
+    </div>
+
     <div class="image">
-      <img src="plan1.png" alt="Planets" usemap="#etage4">
+      <img class="plan plan4" src="../resources/plan1.png" alt="etage4" usemap="#etage4">
+      <img class="plan plan5" src="../resources/plan2.png" alt="etage5" usemap="#etage5" style="display:none;">
+      <img class="plan plan6" src="../resources/plan3.png" alt="etage6" usemap="#etage6" style="display:none;">
       <div class="zone-infos">
         <h1>Placeholdet</h1>
       </div>
@@ -37,6 +45,12 @@
       <area class="room 416" shape="rect" coords="410,446,686,590" nohref>
       <area class="room 417" shape="rect" coords="410,302,686,445" nohref>
     </map>
+
+    <map name=#etage5>
+    </map>
+    <map name="#etage6">
+    </map>
+
     <script src="./script.js"></script>
 
   </body>
