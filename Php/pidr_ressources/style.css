@@ -1,0 +1,50 @@
+
+h1 {
+  user-select: none;
+}
+
+p{
+    text-align:center;
+}
+
+.image {
+  position: relative;
+}
+
+.main {
+  user-select: none;
+}
+
+
+.buttons{
+    text-align:center;
+}
+
+.plan{
+    margin:auto;
+}
+
+.zone-infos{
+    display:none;
+    position:absolute;
+    border-radius: 25px;
+    background-color: coral;
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    user-select: text;
+}
+
+.plop{
+  display:none;
+  position:absolute;
+  border-radius: 6px;
+  text-align : center;
+  padding : 8px 0;
+  cursor : default;
+  top:100px;
+  left:0px;
+  background-color: rgba(255, 204, 0, 0.5);
+}
