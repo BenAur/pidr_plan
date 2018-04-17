@@ -24,17 +24,29 @@ p{
     margin:auto;
 }
 
-.zone-infos{
+#pin{
     display:none;
     position:absolute;
     border-radius: 25px;
-    background-color: coral;
+    background-color: aquamarine;
     box-sizing: border-box;
-    width: 300px;
+    width: 25px;
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
     user-select: text;
+}
+
+#zone-infos{
+  position: fixed;
+  top: 50px;
+  right: 250px;
+  border-radius: 25px;
+  background-color: coral;
+  width: 300px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888;
+  user-select: text;
 }
 
 .plop{

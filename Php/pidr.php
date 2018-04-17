@@ -42,15 +42,29 @@
         <button class="b6">Room6</button>
       </div>
 
+      <div id="main" style="width: 100%;">
+        <div class="image clearfix" style="float:left; width: 80%">
+          <img class="plan plan4" src="pidr_ressources/plan1.png" alt="etage4" usemap="#etage4">
+          <img class="plan plan5" src="pidr_ressources/plan2.png" alt="etage5" usemap="#etage5" style="display:none;">
+          <img class="plan plan6" src="pidr_ressources/plan3.png" alt="etage6" usemap="#etage6" style="display:none;">
+          <div id="pin">
+          </div>
+        </div>
+        <div id="zone-infos" class="zone-infos" style="float:right;">
+          <h1 style="text-align: center"></h1>
+          <p style="text-align: left"></p>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+
+
+      <?php /*
       <div class="image clearfix">
-        <img class="plan plan4" src="pidr_ressources/plan1.png" alt="etage4" usemap="#etage4">
-        <img class="plan plan5" src="pidr_ressources/plan2.png" alt="etage5" usemap="#etage5" style="display:none;">
-        <img class="plan plan6" src="pidr_ressources/plan3.png" alt="etage6" usemap="#etage6" style="display:none;">
-        <div class="zone-infos">
+        
           <h1></h1>
           <p></p>
         </div>
-      </div>
+      </div> */ ?>
 
       <map name="etage4">
         <area class="room 401" shape="rect" coords="36,16,308,368" nohref>
