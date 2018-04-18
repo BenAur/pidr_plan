@@ -66,7 +66,7 @@
         </div>
       </div> */ ?>
 
-      <map name="etage4">
+      <map id="etage4" name="etage4">
         <area class="room 401" shape="rect" coords="36,16,308,368" nohref>
         <area class="room 402" shape="rect" coords="0,0,0,0" nohref>
         <area class="room 403" shape="rect" coords="36,368,310,590" nohref>
@@ -96,9 +96,9 @@
         <area class="room 426" shape="rect" coords="410,2063,686,2202" nohref>
         <area class="room 427" shape="rect" coords="410,1919,686,2049" nohref>
         <area class="room 428" shape="rect" coords="410,1637,686,1918" nohref>
-        <area class="cafet" shape="rect" coords="36,2693,208,2849" nohref>
-        <area class="cafet" shape="rect" coords="36,2849,158,2981" nohref>
-        <area class="manip" shape="rect" coords="36,2983,310,3135" nohref>
+        <area class="room cafet" shape="rect" coords="36,2693,208,2849" nohref>
+        <area class="room cafet" shape="rect" coords="36,2849,158,2981" nohref>
+        <area class="room manip" shape="rect" coords="36,2983,310,3135" nohref>
         <area class="room 429" shape="rect" coords="36,3136,310,3288" nohref>
         <area class="room 430" shape="rect" coords="36,3290,310,3443" nohref>
         <area class="room 431" shape="rect" coords="36,3445,310,3596" nohref>
@@ -112,7 +112,7 @@
         <area class="room 439" shape="rect" coords="410,2983,686,3288" nohref>
       </map>
 
-      <map name=etage5>
+      <map id="etage5" name="etage5">
         <area class="room 501" shape="rect" coords="25.7,14.3,298.6,254.3" nohref>
         <area class="room 502" shape="rect" coords="25.7,254.4,298.6,407.1" nohref>
         <area class="room 503" shape="rect" coords="25.7,408.6,298.6,647.1" nohref>
@@ -138,8 +138,8 @@
         <area class="room 521A" shape="rect" coords="25.7,2320,298.6,2480" nohref>
         <area class="room 521B" shape="rect" coords="25.7,2482.9,298.6,2630" nohref>
         <area class="room 522" shape="rect" coords="25.7,2630,298.6,2872.9" nohref>
-        <area class="cafet" shape="rect" coords="25.7,2871.4,197.1,3047.1" nohref>
-        <area class="cafet" shape="rect" coords="25.7,3047.1,148.6,3158.6" nohref>
+        <area class="room cafet" shape="rect" coords="25.7,2871.4,197.1,3047.1" nohref>
+        <area class="room cafet" shape="rect" coords="25.7,3047.1,148.6,3158.6" nohref>
         <area class="room 523" shape="rect" coords="398.6,2872.9,297.1,2960" nohref>
         <area class="room 524" shape="rect" coords="398.6,2632.9,671.4,2871.4" nohref>
         <area class="room 525" shape="rect" coords="398.6,2482.9,671.4,2630" nohref>
@@ -167,7 +167,7 @@
       </map>
 
 
-      <map name="#etage6">
+      <map id="etage6" name="etage6">
         <area class="room 601" shape="rect" coords="20,13,293,166" nohref>
         <area class="room 602" shape="rect" coords="20,167,293,340" nohref>
         <area class="room 603A" shape="rect" coords="20,341,293,495" nohref>

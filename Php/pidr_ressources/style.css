@@ -37,6 +37,17 @@ p{
     user-select: text;
 }
 
+.zone-infos-stat {
+  display:block;
+  position: absolute;
+  border-radius: 25px;
+  box-sizing: border-box;
+  width : 300px;
+  border: 1px solid;
+  padding: 10px;
+  user-select: text;
+}
+
 #zone-infos{
   position: fixed;
   top: 50px;
